@@ -55,7 +55,9 @@ nav .start-bar div ul,
 }
 
 .start-bar div,
-.end-bar ul li {
+.end-bar ul li,
+.on-hover ul li,
+.safety ul li {
     margin-left: 15px;
     font-size: 20px;
     font-weight: 500;
@@ -67,7 +69,9 @@ nav .start-bar div ul,
 }
 
 .start-bar ul li,
-.end-bar ul li {
+.end-bar ul li,
+.on-hover ul li,
+.safety ul li {
     list-style: none;
     margin-left: 16px;
     cursor: pointer;
@@ -92,7 +96,12 @@ nav .start-bar div ul,
 .start-bar ul li:hover,
 .end-bar ul li:hover {
     text-decoration: underline;
-    color: rgb(252, 0, 0);
+    color: rgb(252, 0, 42);
+}
+
+.on-hover ul li:hover,
+.safety ul li:hover {
+    color: rgb(252, 0, 42);
 }
 
 .swipe {
@@ -131,5 +140,38 @@ nav .start-bar div ul,
 .swipe span {
     margin-top: 200px;
     margin-left: 950px;
-    position: sticky;
+}
+
+.on-hover {
+    margin-left: 227px;
+    visibility: hidden;
+    top: 50px;
+    position: absolute;
+    /* background-color: #d6d6d6; */
+    width: fit-content;
+}
+
+.safety {
+    margin-left: 395px;
+    visibility: hidden;
+    top: 50px;
+    position: absolute;
+    /* background-color: #d6d6d6; */
+    width: fit-content;
+}
+
+.on-hover ul li,
+.safety ul li {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.safety,
+.on-hover {
+    padding-top: 10px;
+    transition: 100ms;
+}
+
+.show {
+    visibility: visible !important;
 }
