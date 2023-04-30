@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./07eef8b101ca939c978a599f508aa955.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: rgb(255, 255, 255); */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(4, 4, 4, 1) 100%);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.start-bar img {
+    height: 140px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    /* background-color: yellow; */
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+nav .start-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .start-bar div ul,
+.end-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.start-bar div,
+.end-bar ul li {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.start-bar div {
+    margin-left: 0px !important;
+}
+
+.start-bar ul li,
+.end-bar ul li {
+    list-style: none;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.end-bar ul span {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.end-bar button {
+    padding: 10px 40px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    margin-left: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.start-bar ul li:hover,
+.end-bar ul li:hover {
+    text-decoration: underline;
+    color: rgb(252, 0, 0);
+}
+
+.swipe {
+    height: calc(100vh - 100px);
+    color: #ffff;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.swipe h1 {
+    font-size: 7vw;
+}
+
+.swipe button {
+    padding: 12px 55px;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 500;
+    background: rgb(229, 22, 98);
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(229, 22, 98) 46%, rgb(255, 145, 67) 84%);
+    margin-top: 16px;
+}
+
+.swipe button:hover {
+    transition: 100ms;
+    background: linear-gradient(90deg, rgb(189, 21, 83) 46%, rgb(197, 113, 52) 84%);
+    color: #d6d6d6;
+}
+
+.swipe span {
+    margin-top: 200px;
+    margin-left: 950px;
+    position: sticky;
+}
