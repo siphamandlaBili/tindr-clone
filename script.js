@@ -40,3 +40,22 @@ showMe.addEventListener("mouseout", function(){
     showMe.classList.remove('show');
     
 })
+
+// pop up
+
+let opButton = document.querySelectorAll('.log1');
+let viewContent = document.querySelector('.overlay-pop')
+let close = document.querySelector('.close')
+
+viewContent.addEventListener('click', function(){
+    viewContent.classList.remove('open-pop')
+})
+
+opButton.forEach(function(draw){
+ close.addEventListener('click', function(){
+    viewContent.classList.remove('open-pop')
+ })   
+ draw.addEventListener('click', function(){
+    viewContent.classList.add('open-pop')
+ })
+})
