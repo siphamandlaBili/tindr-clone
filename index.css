@@ -120,7 +120,7 @@ nav .start-bar div ul,
     font-size: 7vw;
 }
 
-.swipe button {
+.swipe .log1 {
     padding: 12px 55px;
     border-radius: 40px;
     border: none;
@@ -133,7 +133,7 @@ nav .start-bar div ul,
     margin-top: 16px;
 }
 
-.swipe button:hover {
+.swipe .log1:hover {
     transition: 100ms;
     background: linear-gradient(90deg, rgb(189, 21, 83) 46%, rgb(197, 113, 52) 84%);
     color: #d6d6d6;
@@ -279,11 +279,47 @@ div .top {
     visibility: visible;
 }
 
-
+.dis {
+    display: none;
+}
+.log1 {
+    display: unset;
+}
 
 @media (max-width: 970px) {
+    .close {
+            position: relative;
+            color: #5e5e5e;
+            left: 350px;
+            top: 25px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+    .log1{
+        display: none;
+    }
+    .dis {
+        margin-top: 100px;
+        font-size: 1.2em;
+        border: none;
+        color: #5e5e5e;
+        display: unset;
+        border-radius: 30px;
+        width: 80%;
+        height: 7%;
+        margin-bottom: 10px;
+        
+    }
+    
 
+    #trans{
+        background-color: transparent ;
+        margin-top: 0px;
+        color: white;
+        border: 2.5px solid white;
+    }
 
+    
 
     .overlay-pop {
         background-color: white;
@@ -331,4 +367,16 @@ div .top {
         font-style: italic;
         font-weight: 800;
     }
+ }
+
+@media (max-width: 450px){
+.close {
+        position: relative;
+        color: #5e5e5e;
+        left: 350px;
+        top: 25px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
 }
